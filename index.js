@@ -199,7 +199,7 @@ app.post('/loginSubmit', async (req, res) => {
 app.get('/members', (req, res) => {
 
     if (!req.session.authenticated) {
-        res.redirect('/');
+        res.redirect('/login');
     }
 
     var html = `
